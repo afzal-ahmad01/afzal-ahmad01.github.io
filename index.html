@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Afzal Ahmad — AI Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://googleapis.com" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Background -->
+  <!-- Background Layer -->
   <div class="grid-bg"></div>
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
@@ -19,7 +19,7 @@
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
+  <!-- NAVIGATION -->
   <nav>
     <div class="nav-logo">AA<span>.ai</span></div>
     <div class="nav-links">
@@ -31,7 +31,7 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section id="hero">
     <div class="hero-inner">
       <div class="hero-tag">🤖 AI Student &nbsp;·&nbsp; Karachi, Pakistan</div>
@@ -55,7 +55,7 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about">
     <div class="about-left">
       <p class="section-label">About Me</p>
@@ -74,7 +74,7 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- SKILLS SECTION -->
   <section id="skills">
     <div class="skills-header">
       <p class="section-label center">Tech Stack</p>
@@ -133,7 +133,7 @@
     </div>
   </section>
 
-  <!-- LEARNING JOURNEY -->
+  <!-- TIMELINE SECTION -->
   <section id="learning">
     <div class="learning-inner">
       <p class="section-label">Timeline</p>
@@ -180,124 +180,78 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS SECTION -->
   <section id="projects">
     <p class="section-label">Portfolio</p>
-    <h2 class="about-title" style="font-size:2.5rem; margin-bottom:0">Projects &amp; <em>Experiments</em></h2>
+    <h2 class="about-title" style="font-size:2.5rem; margin-bottom: 2rem;">Projects &amp; <em>Experiments</em></h2>
     <div class="projects-grid">
 
       <div class="project-card">
-        <div class="project-status">IN PROGRESS</div>
         <div class="project-num">01</div>
-        <div class="project-title">Python Fundamentals</div>
-        <div class="project-desc">Building a strong Python foundation — data types, loops, functions, OOP, and file handling. The first step toward AI mastery.</div>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">VS Code</span>
-          <span class="tag">OOP</span>
+        <div class="project-content">
+          <h3>Python Data Analyzer</h3>
+          <p>A script written in VS Code using Pandas and NumPy to clean and analyze messy datasets directly in Jupyter Notebook.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Jupyter</span>
+          </div>
         </div>
       </div>
 
       <div class="project-card">
-        <div class="project-status">LEARNING</div>
         <div class="project-num">02</div>
-        <div class="project-title">Data Analysis Notebooks</div>
-        <div class="project-desc">Exploring datasets using Jupyter Notebook. Practicing Pandas and NumPy for data manipulation and generating insights with Matplotlib.</div>
-        <div class="project-tags">
-          <span class="tag">Jupyter</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">NumPy</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-status">UPCOMING</div>
-        <div class="project-num">03</div>
-        <div class="project-title">First ML Model</div>
-        <div class="project-desc">Coming soon — a classification project using scikit-learn. Goal: build, train, evaluate, and deploy my first real machine learning model.</div>
-        <div class="project-tags">
-          <span class="tag">scikit-learn</span>
-          <span class="tag">ML</span>
-          <span class="tag">Python</span>
+        <div class="project-content">
+          <h3>Basic ML Predictor (Upcoming)</h3>
+          <p>Planning a classification model using Scikit-Learn to predict data patterns based on historical datasets.</p>
+          <div class="project-tech">
+            <span>Machine Learning</span>
+            <span>Scikit-Learn</span>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT SECTION -->
   <section id="contact">
     <div class="contact-inner">
-      <p class="section-label center">Let's Connect</p>
-      <h2 class="contact-title">Say <span>Hello</span> 👋</h2>
-      <p class="contact-sub">Always open to connecting with AI enthusiasts, students, and mentors. Whether you want to collaborate, share resources, or just talk about AI — I'm here!</p>
-      <div class="contact-links">
-        <a href="mailto:afzalahmad@email.com" class="contact-link">
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16" height="16"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-          Email Me
-        </a>
-        <a href="https://github.com" target="_blank" class="contact-link">
-          <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub
-        </a>
-        <a href="https://linkedin.com" target="_blank" class="contact-link">
-          <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-        </a>
+      <p class="section-label">Connect</p>
+      <h2 class="about-title" style="font-size:2.5rem;">Let's Build Something <em>Intelligent</em></h2>
+      <p class="contact-desc">I am always open to discussing AI, machine learning projects, or collaboration opportunities in Karachi and online.</p>
+      
+      <div class="contact-info">
+        <div class="info-item">
+          <strong>Email:</strong> 
+          <a href="mailto:afzalahmad@example.com">afzalahmad@example.com</a>
+        </div>
+        <div class="info-item">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com" target="_blank">://github.com</a>
+        </div>
+        <div class="info-item">
+          <strong>Location:</strong> Karachi, Pakistan
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 <span>Afzal Ahmad</span> — Karachi, Pakistan 🇵🇰</p>
-    <p>Made with <span>♥</span> &amp; pure HTML/CSS</p>
+    <p>© 2026 Afzal Ahmad. Built with Passion for AI.</p>
   </footer>
 
+  <!-- CUSTOM CURSOR SCRIPT -->
   <script>
-    // Custom cursor
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cursor.style.left = mx + 'px';
-      cursor.style.top  = my + 'px';
-    });
-    (function animRing() {
-      rx += (mx - rx) * .12;
-      ry += (my - ry) * .12;
-      ring.style.left = rx + 'px';
-      ring.style.top  = ry + 'px';
-      requestAnimationFrame(animRing);
-    })();
-    document.querySelectorAll('a, button').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.style.transform   = 'translate(-50%,-50%) scale(1.6)';
-        ring.style.borderColor = 'rgba(0,229,255,0.6)';
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.style.transform   = 'translate(-50%,-50%) scale(1)';
-        ring.style.borderColor = 'rgba(0,229,255,0.3)';
-      });
-    });
-
-    // Fade-in on scroll
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity   = '1';
-          e.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.skill-card, .project-card, .timeline-item, .stat-card').forEach(el => {
-      el.style.opacity    = '0';
-      el.style.transform  = 'translateY(20px)';
-      el.style.transition = 'opacity .6s ease, transform .6s ease';
-      observer.observe(el);
+    
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
+      ring.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
     });
   </script>
+
 </body>
 </html>
