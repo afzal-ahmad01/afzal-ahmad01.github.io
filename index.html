@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Afzal Ahmad — AI Portfolio</title>
-  <link href="https://googleapis.com" rel="stylesheet"/>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -248,8 +250,14 @@
     const ring = document.getElementById('cursorRing');
     
     document.addEventListener('mousemove', (e) => {
-      cursor.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
-      ring.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      
+      // Ring animation with tiny delay for fluid movement
+      setTimeout(() => {
+        ring.style.left = e.clientX + 'px';
+        ring.style.top = e.clientY + 'px';
+      }, 50);
     });
   </script>
 
