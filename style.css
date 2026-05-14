@@ -1,0 +1,91 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: white;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
+  color: white;
+}
+
+.hero span {
+  color: #facc15;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: #1e3a8a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* SKILLS */
+.skills {
+  margin-top: 10px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: white;
+  margin-top: 30px;
+}
