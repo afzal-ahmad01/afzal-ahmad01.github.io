@@ -3,121 +3,223 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Afzal Ahmad — AI Portfolio</title>
-  <!-- Google Fonts: Inter (body), Syne (headings), Space Mono (monospace) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Syne:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Afzal Ahmad — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <header id="hero" class="hero">
+  <div class="grid-bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav>
+    <div class="nav-logo">AA<span>.ai</span></div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="hero">
     <div class="hero-inner">
+      <div class="hero-tag">🤖 AI Student · Karachi, Pakistan</div>
+
       <h1 class="hero-name">
-        Afzal <span>Ahmad</span>
+        Afzal
+        <span class="line2">Ahmad</span>
       </h1>
-      <p class="hero-sub">AI Student & Aspiring Software Developer</p>
-      <p class="hero-desc">
-        Passionate about building intelligent systems and clean web applications. Currently exploring 
-        machine learning, data science, and full-stack development.
+
+      <p class="hero-sub">
+        BS <span>Artificial Intelligence</span> — Building the Future, One Model at a Time
       </p>
+
+      <p class="hero-desc">
+        A passionate AI student from Karachi exploring machine learning, data science, and modern intelligent systems.
+      </p>
+
       <div class="hero-ctas">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-secondary">Contact Me</a>
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
       </div>
     </div>
-  </header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about">
-    <div class="about-inner">
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      SCROLL
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-left">
+      <p class="section-label">About Me</p>
+      <h2 class="about-title">Curious mind.<br><em>AI obsessed.</em></h2>
+
       <div class="about-text">
-        <h2>About Me</h2>
         <p>
-          I'm Afzal Ahmad, currently a BS Artificial Intelligence student based in Karachi, Pakistan. 
-          I love coding and learning new technologies every day. My focus areas include Python programming, 
-          machine learning basics, and web development with modern tools.
+          I'm Afzal Ahmad, a BS Artificial Intelligence student based in Karachi, Pakistan.
+          My journey in AI has just begun, but my passion for building intelligent systems drives me every single day.
         </p>
         <p>
-          In my projects, I strive for clarity and usability. I believe in continuous learning and building 
-          solutions that have real-world impact. When I’m not coding, I enjoy reading about AI advancements and 
-          contributing to open-source communities.
+          Currently learning Python, exploring data workflows in Jupyter Notebook, and writing code in VS Code.
+          I believe in learning by doing — every line of code is a step forward.
         </p>
-      </div>
-      <div class="profile-container">
-        <!-- Replace 'profile.jpg' with your profile image file -->
-        <img src="profile.jpg" alt="Afzal Ahmad Profile Photo" class="profile-img">
+        <p>
+          My goal is to contribute to AI research and build solutions that solve real-world problems for people in Pakistan and beyond.
+        </p>
       </div>
     </div>
-  </section>
 
-  <!-- SERVICES / PROJECTS SECTION -->
-  <section id="projects" class="projects-services">
-    <h2>My Work & Services</h2>
-    <div class="cards-container">
-      <div class="card">
-        <!-- Replace with actual project screenshot or image -->
-        <img src="project1.jpg" alt="Project 1 Screenshot" class="card-img">
-        <div class="card-content">
-          <h3>Web Development Project</h3>
-          <p>Built a modern responsive website using HTML, CSS, and JavaScript. Features a contact form and animations.</p>
-        </div>
+    <div class="about-right-wrapper">
+      <div class="profile-image-container">
+        <img src="profile.jpg" alt="Afzal Ahmad" class="profile-img">
       </div>
-      <div class="card">
-        <img src="project2.jpg" alt="Project 2 Screenshot" class="card-img">
-        <div class="card-content">
-          <h3>Machine Learning Model</h3>
-          <p>Developed a simple ML model in Python to predict outcomes from a dataset. Used scikit-learn and Jupyter Notebook.</p>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">BS</div>
+          <div class="stat-label">AI Degree</div>
         </div>
-      </div>
-      <div class="card">
-        <img src="project3.jpg" alt="Project 3 Screenshot" class="card-img">
-        <div class="card-content">
-          <h3>Data Visualization Dashboard</h3>
-          <p>Created interactive charts with Python (Matplotlib, Seaborn) to analyze and display data insights in a dashboard.</p>
+        <div class="stat-card">
+          <div class="stat-num">KHI</div>
+          <div class="stat-label">Karachi</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Tools</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Curiosity</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>HTML & CSS</li>
-      <li>Machine Learning</li>
-      <li>Data Analysis</li>
-      <li>Git & GitHub</li>
-    </ul>
+  <section id="skills">
+    <div class="skills-header">
+      <p class="section-label center">Tech Stack</p>
+      <h2 class="skills-title">Skills I'm <em>Mastering</em></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Core AI/ML language. Learning syntax, data structures, OOP, and AI libraries like NumPy & Pandas.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:55%"></div></div>
+        <div class="skill-level">Beginner → Intermediate</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📓</div>
+        <div class="skill-name">Jupyter Notebook</div>
+        <div class="skill-desc">Interactive environment for data exploration, visualization, and ML experiments.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:50%"></div></div>
+        <div class="skill-level">Currently Practicing</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">VS Code</div>
+        <div class="skill-desc">Primary code editor with Python extensions, IntelliSense, debugging tools, and Git integration.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div>
+        <div class="skill-level">Daily Driver</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🧠</div>
+        <div class="skill-name">Machine Learning</div>
+        <div class="skill-desc">Exploring ML fundamentals — regression, classification, neural networks, and model evaluation concepts.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:30%"></div></div>
+        <div class="skill-level">Learning Phase</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Data Science</div>
+        <div class="skill-desc">NumPy, Pandas for data manipulation. Matplotlib for visualization. Building analytical thinking.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:35%"></div></div>
+        <div class="skill-level">In Progress</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🔢</div>
+        <div class="skill-name">Mathematics for AI</div>
+        <div class="skill-desc">Linear algebra, calculus, probability and statistics — the backbone of every AI algorithm.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:45%"></div></div>
+        <div class="skill-level">University Course</div>
+      </div>
+    </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>If you have a project idea or want to collaborate, feel free to reach out!</p>
-    <p>Email: <a href="mailto:afzalahmad@example.com">afzalahmad@example.com</a></p>
-    <!-- Optional: Add social or resume links here -->
+  <section id="projects">
+    <div class="learning-inner">
+      <p class="section-label">Portfolio</p>
+      <h2 class="about-title" style="font-size:2.5rem; margin-bottom: 2rem;">Projects & <em>Experiments</em></h2>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <div class="project-content">
+            <h3>Python Data Analyzer</h3>
+            <p>A script written in VS Code using Pandas and NumPy to clean and analyze messy datasets directly in Jupyter Notebook.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Jupyter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <div class="project-content">
+            <h3>Basic ML Predictor</h3>
+            <p>Planning a classification model using Scikit-Learn to predict data patterns based on historical datasets.</p>
+            <div class="project-tech">
+              <span>Machine Learning</span>
+              <span>Scikit-Learn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- FOOTER -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="section-label">Connect</p>
+      <h2 class="about-title" style="font-size:2.5rem;">Let's Build Something <em>Intelligent</em></h2>
+      <p class="contact-desc">
+        I am always open to discussing AI, machine learning projects, or collaboration opportunities in Karachi and online.
+      </p>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <strong>Email:</strong> <a href="mailto:afzalahmad@example.com">afzalahmad@example.com</a>
+        </div>
+        <div class="info-item">
+          <strong>GitHub:</strong> <a href="https://github.com" target="_blank">github.com</a>
+        </div>
+        <div class="info-item">
+          <strong>Location:</strong> Karachi, Pakistan
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2026 Afzal Ahmad. All rights reserved.</p>
+    <p>© 2026 Afzal Ahmad. Built with Passion for AI.</p>
   </footer>
 
-  <!-- OPTIONAL JAVASCRIPT -->
-  <!--
-  <script>
-    // Custom cursor (optional). Uncomment if desired.
-    // const cursor = document.createElement('div');
-    // cursor.id = 'cursor';
-    // document.body.appendChild(cursor);
-    // document.addEventListener('mousemove', e => {
-    //   cursor.style.left = e.clientX + 'px';
-    //   cursor.style.top = e.clientY + 'px';
-    // });
-  </script>
-  -->
 </body>
 </html>
