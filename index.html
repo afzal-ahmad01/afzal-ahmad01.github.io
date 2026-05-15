@@ -1,88 +1,80 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Afzal Ahmad — Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <title>Afzal Ahmad — AI Portfolio</title>
+  <!-- Google Fonts for Syne and Space Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
+  <!-- Background layers: CSS grid pattern and blurred neon orbs -->
   <div class="grid-bg"></div>
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
 
+  <!-- Custom cursor elements -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVIGATION -->
   <nav>
     <div class="nav-logo">AA<span>.ai</span></div>
     <div class="nav-links">
-      <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#learning">Journey</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
+  <!-- HERO SECTION -->
   <section id="hero">
     <div class="hero-inner">
       <div class="hero-tag">🤖 AI Student · Karachi, Pakistan</div>
-
       <h1 class="hero-name">
         Afzal
-        <span class="line2">Ahmad</span>
+        <span class="line2">Ahmad</span> <!-- Second line stroked using CSS -->
       </h1>
-
-      <p class="hero-sub">
-        BS <span>Artificial Intelligence</span> — Building the Future, One Model at a Time
-      </p>
-
+      <p class="hero-sub">BS <span>Artificial Intelligence</span> — Building the future, one model at a time.</p>
       <p class="hero-desc">
-        A passionate AI student from Karachi exploring machine learning, data science, and modern intelligent systems.
+        A passionate AI student from Karachi exploring machine learning and intelligent systems. Currently mastering the tools that power tomorrow's technology.
       </p>
-
       <div class="hero-ctas">
-        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#projects" class="btn-primary">
+          View My Work →
+        </a>
         <a href="#contact" class="btn-secondary">Get In Touch</a>
       </div>
     </div>
-
     <div class="scroll-indicator">
       <div class="scroll-line"></div>
       SCROLL
     </div>
   </section>
 
+  <!-- ABOUT SECTION -->
   <section id="about">
     <div class="about-left">
       <p class="section-label">About Me</p>
       <h2 class="about-title">Curious mind.<br><em>AI obsessed.</em></h2>
-
       <div class="about-text">
-        <p>
-          I'm Afzal Ahmad, a BS Artificial Intelligence student based in Karachi, Pakistan.
-          My journey in AI has just begun, but my passion for building intelligent systems drives me every single day.
-        </p>
-        <p>
-          Currently learning Python, exploring data workflows in Jupyter Notebook, and writing code in VS Code.
-          I believe in learning by doing — every line of code is a step forward.
-        </p>
-        <p>
-          My goal is to contribute to AI research and build solutions that solve real-world problems for people in Pakistan and beyond.
-        </p>
+        <p>I'm <strong>Afzal Ahmad</strong>, a BS Artificial Intelligence student in Karachi. My journey in AI has just begun, but my passion for building intelligent systems drives me every day.</p>
+        <p>I’m currently learning Python, using Jupyter Notebook for data exploration, and writing code in VS Code. I believe in learning by doing—every line of code is a step forward.</p>
+        <p>My goal: contribute to AI research and build solutions that solve real-world problems in Pakistan and beyond.</p>
       </div>
     </div>
-
     <div class="about-right-wrapper">
+      <!-- Profile image with clipped corner -->
       <div class="profile-image-container">
-        <img src="profile.jpeg" alt="Afzal Ahmad" class="profile-img">
+        <!-- Put your profile image in the same folder as index.html -->
+        <img src="profile.jpg" alt="Afzal Ahmad" class="profile-img">
       </div>
-
       <div class="about-stats">
         <div class="stat-card">
           <div class="stat-num">BS</div>
@@ -94,7 +86,7 @@
         </div>
         <div class="stat-card">
           <div class="stat-num">3+</div>
-          <div class="stat-label">Tools</div>
+          <div class="stat-label">Tools Learning</div>
         </div>
         <div class="stat-card">
           <div class="stat-num">∞</div>
@@ -104,122 +96,165 @@
     </div>
   </section>
 
+  <!-- SKILLS SECTION -->
   <section id="skills">
     <div class="skills-header">
       <p class="section-label center">Tech Stack</p>
       <h2 class="skills-title">Skills I'm <em>Mastering</em></h2>
     </div>
-
     <div class="skills-grid">
       <div class="skill-card">
         <div class="skill-icon">🐍</div>
         <div class="skill-name">Python</div>
-        <div class="skill-desc">Core AI/ML language. Learning syntax, data structures, OOP, and AI libraries like NumPy & Pandas.</div>
+        <div class="skill-desc">Core AI language. Learning syntax, data structures, and AI libraries (NumPy, Pandas).</div>
         <div class="skill-bar-wrap"><div class="skill-bar" style="width:55%"></div></div>
-        <div class="skill-level">Beginner → Intermediate</div>
+        <div class="skill-level">▸ Beginner → Intermediate</div>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon">📓</div>
         <div class="skill-name">Jupyter Notebook</div>
         <div class="skill-desc">Interactive environment for data exploration, visualization, and ML experiments.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" style="width:50%"></div></div>
-        <div class="skill-level">Currently Practicing</div>
+        <div class="skill-level">▸ Currently Practicing</div>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon">⚡</div>
         <div class="skill-name">VS Code</div>
-        <div class="skill-desc">Primary code editor with Python extensions, IntelliSense, debugging tools, and Git integration.</div>
+        <div class="skill-desc">Primary code editor with Python extensions, IntelliSense, and Git integration.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div>
-        <div class="skill-level">Daily Driver</div>
+        <div class="skill-level">▸ Daily Driver</div>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon">🧠</div>
         <div class="skill-name">Machine Learning</div>
-        <div class="skill-desc">Exploring ML fundamentals — regression, classification, neural networks, and model evaluation concepts.</div>
+        <div class="skill-desc">Studying ML fundamentals — regression, classification, neural networks, model evaluation.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" style="width:30%"></div></div>
-        <div class="skill-level">Learning Phase</div>
+        <div class="skill-level">▸ Learning Phase</div>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon">📊</div>
         <div class="skill-name">Data Science</div>
-        <div class="skill-desc">NumPy, Pandas for data manipulation. Matplotlib for visualization. Building analytical thinking.</div>
+        <div class="skill-desc">Using Pandas/NumPy for data manipulation and Matplotlib for visualization, honing analytical skills.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" style="width:35%"></div></div>
-        <div class="skill-level">In Progress</div>
+        <div class="skill-level">▸ In Progress</div>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon">🔢</div>
-        <div class="skill-name">Mathematics for AI</div>
-        <div class="skill-desc">Linear algebra, calculus, probability and statistics — the backbone of every AI algorithm.</div>
+        <div class="skill-name">Math for AI</div>
+        <div class="skill-desc">Studying linear algebra, calculus, probability & statistics — the foundations of AI algorithms.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" style="width:45%"></div></div>
-        <div class="skill-level">University Course</div>
+        <div class="skill-level">▸ University Course</div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
+  <!-- TIMELINE SECTION -->
+  <section id="learning">
     <div class="learning-inner">
-      <p class="section-label">Portfolio</p>
-      <h2 class="about-title" style="font-size:2.5rem; margin-bottom: 2rem;">Projects & <em>Experiments</em></h2>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-num">01</div>
-          <div class="project-content">
-            <h3>Python Data Analyzer</h3>
-            <p>A script written in VS Code using Pandas and NumPy to clean and analyze messy datasets directly in Jupyter Notebook.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>Jupyter</span>
-            </div>
+      <p class="section-label">Timeline</p>
+      <h2 class="about-title" style="font-size:2.5rem">My Learning <em>Journey</em></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">NOW</div>
+          <div class="timeline-content">
+            <h3>Mastering Python for AI</h3>
+            <p>Writing Python scripts daily. Practicing with Jupyter Notebook for data analysis and visualization in VS Code.</p>
+            <span class="timeline-tag">ACTIVE</span>
           </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-num">02</div>
-          <div class="project-content">
-            <h3>Basic ML Predictor</h3>
-            <p>Planning a classification model using Scikit-Learn to predict data patterns based on historical datasets.</p>
-            <div class="project-tech">
-              <span>Machine Learning</span>
-              <span>Scikit-Learn</span>
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>Enrolled in BS Artificial Intelligence</h3>
+            <p>Started formal AI education in Karachi. Covering programming fundamentals, mathematics, and AI concepts.</p>
+            <span class="timeline-tag">MILESTONE</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">NEXT</div>
+          <div class="timeline-content">
+            <h3>First Machine Learning Projects</h3>
+            <p>Planning to build real ML projects—starting with classification models using scikit-learn, then deep learning.</p>
+            <span class="timeline-tag">UPCOMING</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">GOAL</div>
+          <div class="timeline-content">
+            <h3>AI Engineer / Researcher</h3>
+            <p>Long-term vision: contribute to AI research, build impactful products, and represent Pakistan in the global AI community.</p>
+            <span class="timeline-tag">VISION</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <p class="section-label">Portfolio</p>
+    <h2 class="about-title" style="font-size:2.5rem; margin-bottom: 2rem;">Projects &amp; <em>Experiments</em></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-num">01</div>
+        <div class="project-content">
+          <h3>Python Data Analyzer</h3>
+          <p>Built a script in VS Code using Pandas and NumPy to clean and analyze messy datasets in Jupyter Notebook.</p>
+          <div class="project-tech"><span>Python</span><span>Pandas</span><span>Jupyter</span></div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <div class="project-content">
+          <h3>Basic ML Predictor (Upcoming)</h3>
+          <p>Planning a classification model using scikit-learn to predict patterns in datasets. (Coming soon!)</p>
+          <div class="project-tech"><span>Machine Learning</span><span>Scikit-Learn</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
   <section id="contact">
     <div class="contact-inner">
-      <p class="section-label">Connect</p>
+      <p class="section-label" style="justify-content:center">Connect</p>
       <h2 class="about-title" style="font-size:2.5rem;">Let's Build Something <em>Intelligent</em></h2>
-      <p class="contact-desc">
-        I am always open to discussing AI, machine learning projects, or collaboration opportunities in Karachi and online.
-      </p>
-
+      <p class="contact-desc">I am always open to discussing AI, machine learning projects, or collaboration opportunities in Karachi and online.</p>
       <div class="contact-info">
-        <div class="info-item">
-          <strong>Email:</strong> <a href="mailto:afzalahmad@example.com">afzalahmad@example.com</a>
-        </div>
-        <div class="info-item">
-          <strong>GitHub:</strong> <a href="https://github.com" target="_blank">github.com</a>
-        </div>
-        <div class="info-item">
-          <strong>Location:</strong> Karachi, Pakistan
-        </div>
+        <div class="info-item"><strong>Email:</strong> <a href="mailto:afzalahmad@example.com">afzalahmad@example.com</a></div>
+        <div class="info-item"><strong>GitHub:</strong> <a href="https://github.com/YOUR_USERNAME" target="_blank">github.com/YOUR_USERNAME</a></div>
+        <div class="info-item"><strong>Location:</strong> Karachi, Pakistan</div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Afzal Ahmad. Built with Passion for AI.</p>
+    <p>© 2026 <span>Afzal Ahmad</span>. Built with passion for AI.</p>
   </footer>
+
+  <!-- CUSTOM CURSOR SCRIPT -->
+  <script>
+    // Make the small dot and ring follow the mouse
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', (e) => {
+      // Move cursor dot and ring smoothly
+      ring.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
+      cursor.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
+    });
+    // Hover effects on links and buttons
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.transform += ' scale(1.5)'; 
+        ring.style.borderColor = 'rgba(0,229,255,0.6)';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.transform = ring.style.transform.replace(' scale(1.5)','');
+        ring.style.borderColor = 'rgba(0,229,255,0.3)';
+      });
+    });
+  </script>
 
 </body>
 </html>
