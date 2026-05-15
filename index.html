@@ -1,139 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Afzal Ahmad — AI Portfolio</title>
-
-<!-- FIXED FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
-
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afzal Ahmad — AI Portfolio</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-<!-- BACKGROUND -->
-<div class="grid-bg"></div>
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-<div class="orb orb-3"></div>
+  <!-- Background Layer -->
+  <div class="grid-bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
 
-<!-- CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">AA<span>.ai</span></div>
-  <div class="nav-links">
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-inner">
-
-    <!-- PROFILE IMAGE -->
-    <div class="profile-container">
-      <img src="profile.jpg" alt="Afzal Ahmad" class="profile-img">
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">AA<span>.ai</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#learning">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
+  </nav>
 
-    <div class="hero-tag">🤖 AI Student · Karachi, Pakistan</div>
-
-    <h1 class="hero-name">
-      Afzal <span>Ahmad</span>
-    </h1>
-
-    <p class="hero-sub">
-      BS Artificial Intelligence — Building Intelligent Systems
-    </p>
-
-    <p class="hero-desc">
-      Passionate AI student exploring Machine Learning, Data Science, and modern intelligent systems using Python and real-world projects.
-    </p>
-
-    <div class="hero-ctas">
-      <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="#contact" class="btn-secondary">Contact Me</a>
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">🤖 AI Student &nbsp;·&nbsp; Karachi, Pakistan</div>
+      <h1 class="hero-name">
+        Afzal
+        <span class="line2">Ahmad</span>
+      </h1>
+      <p class="hero-sub">BS <span>Artificial Intelligence</span> — Building the Future, One Model at a Time</p>
+      <p class="hero-desc">A passionate AI student from Karachi exploring the frontiers of machine learning, data science, and intelligent systems. Currently mastering the tools that power tomorrow's technology.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+          View My Work
+        </a>
+        <a href="#contact" class="btn-secondary">Get In Touch →</a>
+      </div>
     </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      SCROLL
+    </div>
+  </section>
 
-  </div>
-</section>
+  <!-- ABOUT SECTION WITH PROFILE PHOTO -->
+  <section id="about">
+    <div class="about-left">
+      <p class="section-label">About Me</p>
+      <h2 class="about-title">Curious mind.<br><em>AI obsessed.</em></h2>
+      <div class="about-text">
+        <p>I'm Afzal Ahmad, a BS Artificial Intelligence student based in Karachi, Pakistan. My journey in AI has just begun, but my passion for building intelligent systems drives me every single day.</p>
+        <p>Currently learning Python, exploring data workflows in Jupyter Notebook, and writing code in VS Code. I believe in learning by doing — every line of code is a step forward.</p>
+        <p>My goal: contribute to AI research and build solutions that solve real-world problems for people in Pakistan and beyond.</p>
+      </div>
+    </div>
+    
+    <!-- Profile Photo & Stats Column -->
+    <div class="about-right-wrapper">
+      <div class="profile-image-container">
+        <img src="profile.jpg" alt="Afzal Ahmad" class="profile-img">
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><div class="stat-num">BS</div><div class="stat-label">AI Degree</div></div>
+        <div class="stat-card"><div class="stat-num">KHI</div><div class="stat-label">Karachi</div></div>
+        <div class="stat-card"><div class="stat-num">3+</div><div class="stat-label">Tools</div></div>
+        <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Curiosity</div></div>
+      </div>
+    </div>
+  </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a BS Artificial Intelligence student from Karachi, Pakistan.
-    I am currently learning Python, Machine Learning, and Data Science
-    to build real-world AI solutions.
-  </p>
-</section>
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="skills-header">
+      <p class="section-label center">Tech Stack</p>
+      <h2 class="skills-title">Skills I'm <em>Mastering</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Core AI/ML language. Learning syntax, data structures, OOP, and AI libraries like NumPy &amp; Pandas.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:55%"></div></div>
+        <div class="skill-level">▸ Beginner → Intermediate</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📓</div>
+        <div class="skill-name">Jupyter Notebook</div>
+        <div class="skill-desc">Interactive environment for data exploration, visualization, and ML experiments. Daily practice tool.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:50%"></div></div>
+        <div class="skill-level">▸ Currently Practicing</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">VS Code</div>
+        <div class="skill-desc">Primary code editor with Python extensions, IntelliSense, debugging tools, and Git integration.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div>
+        <div class="skill-level">▸ Daily Driver</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🧠</div>
+        <div class="skill-name">Machine Learning</div>
+        <div class="skill-desc">Exploring ML fundamentals — regression, classification, neural networks, and model evaluation concepts.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:30%"></div></div>
+        <div class="skill-level">▸ Learning Phase</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Data Science</div>
+        <div class="skill-desc">NumPy, Pandas for data manipulation. Matplotlib for visualization. Building analytical thinking.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:35%"></div></div>
+        <div class="skill-level">▸ In Progress</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔢</div>
+        <div class="skill-name">Mathematics for AI</div>
+        <div class="skill-desc">Linear algebra, calculus, probability &amp; statistics — the backbone of every AI algorithm.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:45%"></div></div>
+        <div class="skill-level">▸ University Course</div>
+      </div>
+    </div>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
+  <!-- TIMELINE SECTION -->
+  <section id="learning">
+    <div class="learning-inner">
+      <p class="section-label">Timeline</p>
+      <h2 class="about-title" style="font-size:2.5rem">My Learning <em>Journey</em></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">NOW</div>
+          <div class="timeline-content">
+            <h3>Mastering Python for AI</h3>
+            <p>Writing Python scripts daily. Practicing with Jupyter Notebooks for data analysis and visualization in VS Code.</p>
+            <span class="timeline-tag">ACTIVE</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>Enrolled in BS Artificial Intelligence</h3>
+            <p>Started formal AI education in Karachi. Covering programming fundamentals, mathematics, and AI concepts.</p>
+            <span class="timeline-tag">MILESTONE</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">NEXT</div>
+          <div class="timeline-content">
+            <h3>First Machine Learning Projects</h3>
+            <p>Planning to build real ML projects — starting with classification models using scikit-learn, then deep learning.</p>
+            <span class="timeline-tag">UPCOMING</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">GOAL</div>
+          <div class="timeline-content">
+            <h3>AI Engineer / Researcher</h3>
+            <p>Long-term vision: contribute to AI research, build impactful products, and represent Pakistan in the global AI community.</p>
+            <span class="timeline-tag">VISION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="skills">
-    <span>Python</span>
-    <span>Machine Learning</span>
-    <span>Jupyter Notebook</span>
-    <span>VS Code</span>
-    <span>GitHub</span>
-    <span>Data Science</span>
-  </div>
-</section>
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <p class="section-label">Portfolio</p>
+    <h2 class="about-title" style="font-size:2.5rem; margin-bottom: 2rem;">Projects &amp; <em>Experiments</em></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-num">01</div>
+        <div class="project-content">
+          <h3>Python Data Analyzer</h3>
+          <p>A script written in VS Code using Pandas and NumPy to clean and analyze messy datasets directly in Jupyter Notebook.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Jupyter</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <div class="project-content">
+          <h3>Basic ML Predictor (Upcoming)</h3>
+          <p>Planning a classification model using Scikit-Learn to predict data patterns based on historical datasets.</p>
+          <div class="project-tech">
+            <span>Machine Learning</span>
+            <span>Scikit-Learn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="section-label">Connect</p>
+      <h2 class="about-title" style="font-size:2.5rem;">Let's Build Something <em>Intelligent</em></h2>
+      <p class="contact-desc">I am always open to discussing AI, machine learning projects, or collaboration opportunities in Karachi and online.</p>
+      <div class="contact-info">
+        <div class="info-item">
+          <strong>Email:</strong> 
+          <a href="mailto:afzalahmad@example.com">afzalahmad@example.com</a>
+        </div>
+        <div class="info-item">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com" target="_blank">://github.com</a>
+        </div>
+        <div class="info-item">
+          <strong>Location:</strong> Karachi, Pakistan
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>Python Data Analyzer</h3>
-    <p>Data cleaning and analysis using Python (Pandas, NumPy).</p>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Afzal Ahmad. Built with Passion for AI.</p>
+  </footer>
 
-  <div class="project">
-    <h3>ML Model (In Progress)</h3>
-    <p>First classification model using Scikit-Learn.</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: afzalahmad@example.com</p>
-  <p>Location: Karachi, Pakistan</p>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  © 2026 — Afzal Ahmad
-</footer>
-
-<!-- SAFE CURSOR SCRIPT -->
-<script>
-const cursor = document.getElementById("cursor");
-const ring = document.getElementById("cursorRing");
-
-if (cursor && ring) {
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-
-    ring.style.left = e.clientX + "px";
-    ring.style.top = e.clientY + "px";
-  });
-}
-</script>
+  <!-- CUSTOM CURSOR SCRIPT -->
+  <script>
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
+      ring.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
+    });
+  </script>
 
 </body>
 </html>
