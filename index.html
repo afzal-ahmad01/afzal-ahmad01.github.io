@@ -4,24 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Afzal Ahmad — AI Portfolio</title>
+  <!-- Google Fonts Connection Fix -->
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link href="https://googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Local Stylesheet -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Background Layer -->
+  <!-- Ambient Background Layers -->
   <div class="grid-bg"></div>
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
 
-  <!-- Custom Cursor -->
+  <!-- Custom AI Cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAVIGATION -->
+  <!-- NAVIGATION BAR -->
   <nav>
     <div class="nav-logo">AA<span>.ai</span></div>
     <div class="nav-links">
@@ -135,7 +137,7 @@
     </div>
   </section>
 
-  <!-- TIMELINE SECTION -->
+  <!-- LEARNING TIMELINE -->
   <section id="learning">
     <div class="learning-inner">
       <p class="section-label">Timeline</p>
@@ -230,7 +232,7 @@
         </div>
         <div class="info-item">
           <strong>GitHub:</strong> 
-          <a href="https://github.com/afzal-ahmad01" target="_blank">://github.com</a>
+          <a href="https://github.com/afzal-ahmad01" target="_blank">github.com/afzal-ahmad01</a>
         </div>
         <div class="info-item">
           <strong>Location:</strong> Karachi, Pakistan
@@ -244,7 +246,7 @@
     <p>© 2026 Afzal Ahmad. Built with Passion for AI.</p>
   </footer>
 
-  <!-- CUSTOM CURSOR SCRIPT -->
+  <!-- CUSTOM SMOOTH CURSOR SCRIPT -->
   <script>
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursorRing');
@@ -253,11 +255,8 @@
       cursor.style.left = e.clientX + 'px';
       cursor.style.top = e.clientY + 'px';
       
-      // Ring animation with tiny delay for fluid movement
-      setTimeout(() => {
-        ring.style.left = e.clientX + 'px';
-        ring.style.top = e.clientY + 'px';
-      }, 50);
+      ring.style.left = e.clientX + 'px';
+      ring.style.top = e.clientY + 'px';
     });
   </script>
 
